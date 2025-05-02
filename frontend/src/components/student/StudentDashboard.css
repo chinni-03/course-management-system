@@ -1,0 +1,128 @@
+.student-dashboard {
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+
+.welcome-section {
+    padding-bottom: clamp(1.5rem, 4vw, 2rem);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: clamp(1.5rem, 4vw, 2rem);
+}
+
+.page-title {
+    color: #2b2d42;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: clamp(12px, 2vw, 15px);
+    padding: clamp(1.5rem, 4vw, 2rem);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    color: #2575fc;
+    height: clamp(60px, 15vw, 80px);
+    width: clamp(60px, 15vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(37, 117, 252, 0.1);
+    border-radius: 50%;
+    margin: 0 auto clamp(1rem, 3vw, 1.5rem);
+}
+
+.dashboard-card h3 {
+    color: #2b2d42;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: clamp(0.8rem, 2vw, 1rem);
+}
+
+.enrolled-courses {
+    margin-top: clamp(1rem, 3vw, 1.5rem);
+    text-align: left;
+}
+
+.enrolled-course-item {
+    background: rgba(37, 117, 252, 0.05);
+    border-radius: clamp(8px, 1.5vw, 10px);
+    padding: clamp(0.8rem, 2vw, 1rem);
+    margin-bottom: clamp(0.8rem, 2vw, 1rem);
+}
+
+.enrolled-course-item:last-child {
+    margin-bottom: 0;
+}
+
+.enrolled-course-item h4 {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-weight: 600;
+    color: #2b2d42;
+    margin-bottom: clamp(0.3rem, 1vw, 0.5rem);
+    word-break: break-word;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+@media (max-width: 768px) {
+    .dashboard-card {
+        margin-bottom: 1rem;
+    }
+
+    .dashboard-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .enrolled-courses {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .student-dashboard {
+        padding: 0.5rem;
+    }
+
+    .welcome-section {
+        text-align: center;
+    }
+
+    .dashboard-card {
+        padding: 1.2rem;
+    }
+
+    .enrolled-course-item {
+        padding: 0.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .dashboard-card {
+        margin-bottom: 0;
+    }
+}

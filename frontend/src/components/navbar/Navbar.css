@@ -1,0 +1,104 @@
+.navbar {
+    z-index: 1050;
+    position: sticky;
+    top: 0;
+    padding: clamp(0.6rem, 2vw, 0.8rem) clamp(0.8rem, 3vw, 1rem);
+    background: linear-gradient(90deg, #1a1c1e 0%, #2b2d42 100%);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-size: clamp(1.2rem, 3vw, 1.4rem) !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white !important;
+    padding: 0.3rem 0;
+}
+
+.navbar-nav {
+    gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 500;
+    color: #f1f1f1 !important;
+    padding: 0.5rem clamp(0.8rem, 2vw, 1rem);
+    border-radius: clamp(4px, 1vw, 6px);
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #2575fc !important;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    padding: clamp(0.3rem, 1.5vw, 0.5rem);
+    transition: all 0.2s ease;
+}
+
+.navbar-toggler:hover {
+    border-color: #2575fc !important;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: clamp(1.2rem, 3vw, 1.5rem);
+    height: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: linear-gradient(90deg, #1a1c1e 0%, #2b2d42 100%);
+        margin: 0.5rem -1rem -0.6rem;
+        padding: 0.5rem 1rem 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-nav {
+        gap: 0.5rem;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        display: block;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+
+    .navbar-collapse {
+        margin: 0.5rem -0.8rem -0.5rem;
+        padding: 0.5rem 0.8rem 0.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

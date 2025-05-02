@@ -1,0 +1,92 @@
+.login-page {
+    background: #f7f7f7;
+    height: 100vh;
+}
+
+.card {
+    border-radius: clamp(12px, 2vw, 20px);
+    overflow: hidden;
+    width: min(100%, 450px);
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: clamp(1.5rem, 4vw, 2rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+.fit-content {
+    height: fit-content;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    border-radius: clamp(8px, 1.5vw, 10px);
+    padding: clamp(0.6rem, 2vw, 0.8rem);
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #2575fc;
+    border-color: #2575fc;
+    border-radius: clamp(8px, 1.5vw, 10px);
+    padding: clamp(0.6rem, 2vw, 0.8rem);
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #1a60d5;
+    border-color: #1a60d5;
+}
+
+a {
+    color: #2575fc;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Centering the card form */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .login-page {
+        padding: 0.5rem;
+        background: white;
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-body {
+        padding: 1rem;
+    }
+}
