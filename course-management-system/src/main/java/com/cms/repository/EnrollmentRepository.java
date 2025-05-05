@@ -24,4 +24,8 @@ public interface EnrollmentRepository extends JpaRepository<Enrollment, Long> {
     void unenrollCourse(@Param("studentId") String studentId, @Param("courseId") String courseId);
 
     boolean existsByStudent_IdAndCourse_CourseId(String studentId, String courseId);
+
+    @Modifying
+    @Transactional
+	void deleteByCourse_CourseId(String courseId);
 }
