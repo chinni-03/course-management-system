@@ -29,7 +29,6 @@ const Login = () => {
 
       // Check if there was a course enrollment attempt
       const intendedCourseId = sessionStorage.getItem("intendedCourseId");
-      console.log("Intended Course ID:", intendedCourseId);
 
       if (intendedCourseId && res.data.role.toLowerCase() === "student") {
         // Clear the stored course ID
