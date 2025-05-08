@@ -103,7 +103,7 @@ const LandingPage = () => {
       {/* Footer */}
       <footer className="bg-dark text-light py-responsive text-center">
         <p className="body-small mb-0">
-          &copy; {new Date().getFullYear()} EduSync. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Couma. All Rights Reserved.
         </p>
       </footer>
     </>
