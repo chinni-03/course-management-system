@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark sticky-top shadow">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <i className="bi bi-mortarboard-fill me-2"></i> EduSync
+          <i className="bi bi-mortarboard-fill me-2"></i> Couma
         </Link>
         <button
           className="navbar-toggler"

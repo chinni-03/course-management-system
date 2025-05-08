@@ -37,7 +37,7 @@ const DashboardNavbar = () => {
               : `/student/dashboard/${userId}`
           }
         >
-          <i className="bi bi-mortarboard-fill me-2"></i> EduSync
+          <i className="bi bi-mortarboard-fill me-2"></i> Couma
         </Link>
         <button
           className="navbar-toggler"
