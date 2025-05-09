@@ -1,11 +1,27 @@
+:root {
+    --page-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --btn-hover-bg: #e2e6ea;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme='dark'] {
+    --page-bg: #121212;
+    --card-bg: #1e1e1e;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --btn-hover-bg: #3a3a3a;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+}
+
 .course-details-page {
     min-height: 100vh;
-    background-color: #f8f9fa;
+    background-color: var(--page-bg);
     padding: 0;
 }
 
 .course-details-card {
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     overflow: hidden;
     margin: 0.5rem;
@@ -21,14 +37,14 @@
 }
 
 .course-info-card {
-    background: white;
+    background: var(--card-bg);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     height: 100%;
+    box-shadow: 0 4px 12px var(--card-shadow);
 }
 
 .course-info-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .course-description {
@@ -44,12 +60,12 @@
 }
 
 .btn-light:hover:not(:disabled) {
-    background-color: #e2e6ea;
+    background-color: var(--btn-hover-bg);
     transform: translateY(-1px);
 }
 
 .text-white-50 {
-    opacity: 0.8;
+    color: var(--text-secondary);
     font-size: clamp(0.875rem, 2vw, 1rem);
 }
 

@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./DashboardNavbar.css";
 import axios from "axios";
+import { useTheme } from "../../context/ThemeContext";
 
 const DashboardNavbar = () => {
   const navigate = useNavigate();
   const { id } = useParams();
+  const { darkMode, toggleTheme } = useTheme();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -27,7 +30,7 @@ const DashboardNavbar = () => {
   const userId = localStorage.getItem("id");
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top shadow">
       <div className="container-fluid">
         <Link
           className="navbar-brand"
@@ -37,7 +40,8 @@ const DashboardNavbar = () => {
               : `/student/dashboard/${userId}`
           }
         >
-          <i className="bi bi-mortarboard-fill me-2"></i> EduSync
+          <i className="bi bi-book-half me-2"></i>
+          <span>EduSync Dashboard</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -99,7 +103,19 @@ const DashboardNavbar = () => {
               </>
             )}
 
-            <li className="nav-item ms-3">
+            <li className="nav-item">
+              <button
+                onClick={toggleTheme}
+                className="btn btn-link nav-link border-0 p-0 d-flex align-items-center mx-3"
+                aria-label="Toggle theme"
+              >
+                <i
+                  className={`bi bi-${darkMode ? "sun" : "moon"}-fill fs-5`}
+                ></i>
+              </button>
+            </li>
+
+            <li className="nav-item">
               <button
                 onClick={handleLogout}
                 className="btn btn-outline-light btn-sm rounded px-4"

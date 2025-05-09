@@ -100,7 +100,7 @@ const ViewCourses = () => {
   }
 
   return (
-    <div className="courses-page">
+    <div className="courses-page section-padding">
       {isAuthenticated ? <DashboardNavbar /> : <Navbar />}
       <div className="container my-5">
         <h2 className="text-center page-title">Available Courses</h2>

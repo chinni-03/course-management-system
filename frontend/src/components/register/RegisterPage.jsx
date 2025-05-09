@@ -88,7 +88,7 @@ const RegisterPage = () => {
         className="d-flex justify-content-center align-items-center"
         style={{ height: "fit-content" }}
       >
-        <div className="row justify-content-center align-items-center w-100">
+        <div className="row justify-content-center align-items-center w-100 my-auto">
           <div className="col-lg-6 col-md-8 col-12">
             <div className="card shadow-lg border-0 rounded-lg">
               <div className="card-body p-5">

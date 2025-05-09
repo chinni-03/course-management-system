@@ -1,6 +1,29 @@
+:root {
+    --page-bg: #f7f7f7;
+    --card-bg: #ffffff;
+    --card-shadow: transparent !important;
+    --text-primary: #eee;
+    --btn-primary-bg: #2575fc;
+    --btn-primary-hover-bg: #1a60d5;
+    --link-color: #2575fc;
+    --bs-body-color: #f0f0f0;
+    --bg-secondary: #e0e0e0;
+}
+
+[data-theme='dark'] {
+    --page-bg: #212429 !important;
+    --card-bg: #41414141 !important;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --text-primary: #eee !important;
+    --text-secondary: #cccccc !important;
+    --link-color: #6e8efb;
+    --bs-body-color: #121212;
+    --bg-secondary: #1a1a1a;
+}
+
 .courses-page {
     min-height: 100vh;
-    background: #f8f9fa;
+    background: var(--page-bg);
 }
 
 .page-title {
@@ -8,6 +31,10 @@
     font-weight: 700;
     margin-bottom: clamp(1.5rem, 4vw, 2rem);
     font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.courses-page .card-body {
+    background: transparent;
 }
 
 .course-card {
@@ -38,7 +65,7 @@
 .card-title {
     font-size: clamp(1.1rem, 3vw, 1.3rem);
     font-weight: 600;
-    color: #2b2d42;
+    color: var(--text-primary);
     position: relative;
     padding-bottom: 0.5rem;
     margin: 1rem 0;
@@ -57,12 +84,11 @@
 }
 
 .card-text {
-    color: #6c757d;
+    color: var(--text-secondary);
     font-size: clamp(0.85rem, 2vw, 0.9rem);
     margin: 1rem 0;
     flex-grow: 1;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -74,6 +100,7 @@
     margin-bottom: 1rem;
     font-size: clamp(0.85rem, 2vw, 0.9rem);
     flex-wrap: wrap;
+    color: var(--text-secondary);
     gap: 0.5rem;
 }
 
@@ -81,7 +108,6 @@
 .course-id {
     display: flex;
     align-items: center;
-    color: #6c757d;
 }
 
 .credits i {

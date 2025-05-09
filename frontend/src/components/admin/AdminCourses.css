@@ -84,6 +84,7 @@
     border-top-left-radius: clamp(12px, 2vw, 15px);
     border-top-right-radius: clamp(12px, 2vw, 15px);
     padding: clamp(0.75rem, 2vw, 1rem);
+    border-bottom: none;
 }
 
 .modal-header .modal-title {
@@ -143,7 +144,7 @@
 
 .modal-footer {
     padding: clamp(0.8rem, 2vw, 1rem);
-    border-top: 1px solid #dee2e6;
+    border-top: none;
 }
 
 .modal-footer .btn {

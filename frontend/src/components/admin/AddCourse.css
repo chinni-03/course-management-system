@@ -4,7 +4,6 @@
 }
 
 .card {
-    border: none;
     border-radius: clamp(12px, 2vw, 15px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) !important;
     width: min(100%, 800px);

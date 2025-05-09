@@ -10,6 +10,7 @@
     overflow: hidden;
     margin: 0 auto;
     max-width: 1200px;
+    border: none;
 }
 
 .course-details-card .card-header {

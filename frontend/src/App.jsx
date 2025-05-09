@@ -19,7 +19,9 @@ import CourseDetails from "./components/admin/CourseDetails";
 import EnrolledCourses from "./components/student/EnrolledCourses";
 import EnrolledCourseDetails from "./components/student/EnrolledCourseDetails";
 import ProtectedRoute from "./components/ProtectedRoute";
+import AboutPage from "./components/about/AboutPage";
 import { jwtDecode } from "jwt-decode";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function AppWrapper() {
   const navigate = useNavigate();
@@ -55,6 +57,7 @@ function AppWrapper() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/about" element={<AboutPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/courses" element={<ViewCourses />} />
@@ -133,19 +136,21 @@ function AppWrapper() {
 function App() {
   return (
     <Router>
-      <AppWrapper />
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      <ThemeProvider>
+        <AppWrapper />
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
+      </ThemeProvider>
     </Router>
   );
 }

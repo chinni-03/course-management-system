@@ -1,20 +1,35 @@
+:root {
+    --navbar-bg: rgba(255, 255, 255, 0.8);
+    --text-secondary: #6c757d;
+    --accent-color: #2575fc;
+    --hover-bg: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='dark'] {
+    --navbar-bg: rgba(18, 18, 18, 0.8);
+    --text-secondary: #adb5bd;
+    --accent-color: #6e8efb;
+    --hover-bg: rgba(255, 255, 255, 0.1);
+}
+
 .custom-navbar {
-    background: linear-gradient(90deg, #1a1c1e 0%, #2b2d42 100%);
+    background: var(--navbar-bg);
     padding: clamp(0.6rem, 2vw, 0.8rem) clamp(0.8rem, 3vw, 1rem);
     font-weight: 500;
     font-size: clamp(0.9rem, 2vw, 1.05rem);
+    border: none;
 }
 
 .custom-navbar .navbar-brand {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-weight: bold;
     letter-spacing: 1px;
-    color: white;
+    color: var(--text-secondary);
     padding: 0.3rem 0;
 }
 
 .custom-navbar .nav-link {
-    color: #f1f1f1 !important;
+    color: var(--text-secondary) !important;
     margin: 0.2rem clamp(0.3rem, 2vw, 1rem);
     padding: 0.5rem clamp(0.6rem, 2vw, 1rem);
     border-radius: 6px;
@@ -22,32 +37,33 @@
 }
 
 .custom-navbar .nav-link:hover {
-    color: #2575fc !important;
-    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--accent-color) !important;
+    background-color: var(--hover-bg);
+    transform: translateY(-1px);
 }
 
 .custom-navbar .btn-outline-light {
-    border-color: #fff;
+    border: none;
     transition: all 0.2s ease;
     padding: 0.5rem clamp(0.8rem, 2vw, 1.2rem);
     font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .custom-navbar .btn-outline-light:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-color: #2575fc;
-    color: #2575fc;
+    background-color: var(--hover-bg);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 .custom-navbar .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
+    border: none;
     padding: clamp(0.3rem, 1.5vw, 0.5rem);
     transition: all 0.2s ease;
 }
 
 .custom-navbar .navbar-toggler:hover {
-    border-color: #2575fc;
-    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-color);
+    background-color: var(--hover-bg);
 }
 
 .custom-navbar .navbar-toggler-icon {
@@ -58,10 +74,10 @@
 
 @media (max-width: 991px) {
     .custom-navbar .navbar-collapse {
-        background: linear-gradient(90deg, #1a1c1e 0%, #2b2d42 100%);
+        background: var(--navbar-bg);
         margin: 0.5rem -1rem -0.6rem;
         padding: 0.5rem 1rem 1rem;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border: none;
     }
 
     .custom-navbar .nav-link {
@@ -96,9 +112,14 @@
         display: flex;
         justify-content: flex-end;
     }
+}
 
-    .custom-navbar .nav-item {
-        display: flex;
-        align-items: center;
-    }
+.theme-toggle {
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
 }

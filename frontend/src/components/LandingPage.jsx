@@ -101,11 +101,8 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-dark text-light py-responsive text-center">
-        <p className="body-small mb-0">
-          &copy; {new Date().getFullYear()} EduSync. All Rights Reserved.
-        </p>
-      </footer>
+      
+      <div className="hero-animation"></div>
     </>
   );
 };
