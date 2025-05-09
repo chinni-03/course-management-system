@@ -77,7 +77,7 @@ const EnrolledCourseDetails = () => {
   }
 
   return (
-    <div className="course-details-page">
+    <div className="course-details-page d-flex flex-column min-vh-100">
       <DashboardNavbar />
       <div className="container my-3 my-md-5">
         <div className="row justify-content-center g-0">
@@ -140,7 +140,7 @@ const EnrolledCourseDetails = () => {
                     <i className="bi bi-info-circle-fill me-2"></i>
                     Description
                   </h4>
-                  <div className="p-3 border rounded bg-light">
+                  <div className="p-3 border rounded">
                     <p className="mb-0 fs-6">{course.courseDescription}</p>
                   </div>
                 </div>

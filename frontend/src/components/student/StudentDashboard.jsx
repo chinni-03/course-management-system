@@ -58,12 +58,12 @@ const StudentDashboard = () => {
   }, [fetchStudentData, fetchEnrolledCourses]);
 
   return (
-    <div className="student-dashboard">
+    <div className="student-dashboard section-padding">
       <DashboardNavbar />
       <div className="container my-5">
         <div className="welcome-section mb-5">
           <h2 className="page-title">Welcome, {studentInfo?.firstName}!</h2>
-          <p className="text-muted">Student ID: {id}</p>
+          <p className="">Student ID: {id}</p>
         </div>
 
         <div className="row g-4">

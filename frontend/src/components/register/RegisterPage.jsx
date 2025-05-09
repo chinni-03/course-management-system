@@ -82,14 +82,11 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="register-page">
+    <div className="register-page d-flex justify-content-center align-items-center w-100">
       <Navbar />
-      <div
-        className="d-flex justify-content-center align-items-center"
-        style={{ height: "fit-content" }}
-      >
+      <div className="" style={{ height: "fit-content" }}>
         <div className="row justify-content-center align-items-center w-100 my-auto">
-          <div className="col-lg-6 col-md-8 col-12">
+          <div className="col-lg-6 col-md-8 col-12 w-100">
             <div className="card shadow-lg border-0 rounded-lg">
               <div className="card-body p-5">
                 <h4 className="text-center mb-4">Create Your Account</h4>

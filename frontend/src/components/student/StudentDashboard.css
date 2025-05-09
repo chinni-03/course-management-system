@@ -9,7 +9,7 @@
 }
 
 [data-theme='dark'] {
-    --dashboard-bg: #121212;
+    --dashboard-bg: #212429;
     --card-bg: #1e1e1e;
     --card-border: rgba(255, 255, 255, 0.1);
     --text-primary: #e0e0e0;
