@@ -84,7 +84,7 @@ const AddCourse = () => {
   };
 
   return (
-    <div className="add-course-page">
+    <div className="add-course-page d-flex flex-column min-vh-100">
       <DashboardNavbar />
       <div className="container my-5">
         <div className="row justify-content-center">
@@ -186,7 +186,7 @@ const AddCourse = () => {
                       Course Type
                     </label>
                     <select
-                      className="form-select"
+                      className="form-select form-control"
                       id="courseType"
                       name="courseType"
                       value={courseData.courseType}

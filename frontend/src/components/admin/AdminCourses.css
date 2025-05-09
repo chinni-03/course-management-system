@@ -1,6 +1,18 @@
+[data-theme="dark"] {
+    --page-bg: #212429 !important;
+    --card-bg: #1e1e1e;
+    --table-bg: #1e1e1e;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --text-primary: #e0e0e0;
+    --btn-primary-bg: #6e8efb;
+    --btn-primary-hover-bg: #5a7ed5;
+    --link-color: #6e8efb;
+}
+
 .admin-courses-page {
     min-height: 100vh;
-    background: #f8f9fa;
+    background: var(--page-bg);
+    padding: clamp(2rem, 6vw, 4rem) 0;
 }
 
 .page-title {
@@ -14,11 +26,12 @@
     border-radius: clamp(8px, 2vw, 10px);
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    background: white;
+    background: var(--table-bg) !important;
 }
 
 .table {
     margin-bottom: 0;
+    background: var(--table-bg) !important;
 }
 
 .table thead {
@@ -34,7 +47,6 @@
 }
 
 .course-row:hover {
-    background-color: #f8f9fa;
     transition: background-color 0.2s ease;
 }
 

@@ -41,7 +41,7 @@ const DashboardNavbar = () => {
           }
         >
           <i className="bi bi-book-half me-2"></i>
-          <span>EduSync Dashboard</span>
+          <span>EduSync</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -106,7 +106,7 @@ const DashboardNavbar = () => {
             <li className="nav-item">
               <button
                 onClick={toggleTheme}
-                className="btn btn-link nav-link border-0 p-0 d-flex align-items-center mx-3"
+                className="btn btn-link nav-link border-0 p-0 mx-3"
                 aria-label="Toggle theme"
               >
                 <i
@@ -118,7 +118,7 @@ const DashboardNavbar = () => {
             <li className="nav-item">
               <button
                 onClick={handleLogout}
-                className="btn btn-outline-light btn-sm rounded px-4"
+                className="btn btn-danger btn-sm rounded px-4 text-light"
               >
                 Logout
               </button>

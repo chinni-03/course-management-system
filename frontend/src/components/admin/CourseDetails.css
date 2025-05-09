@@ -1,3 +1,14 @@
+[data-theme="dark"] {
+    --page-bg: #212429 !important;
+    --card-bg: #1e1e1e;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --text-primary: #e0e0e0;
+    --btn-primary-bg: #6e8efb;
+    --btn-primary-hover-bg: #5a7ed5;
+    --link-color: #6e8efb;
+    --card-border: gray;
+}
+
 .course-details-page {
     min-height: 100vh;
     background-color: #f8f9fa;
@@ -5,7 +16,7 @@
 }
 
 .course-details-card {
-    background: white;
+    background: transparent;
     border-radius: clamp(8px, 2vw, 12px);
     overflow: hidden;
     margin: 0 auto;
@@ -23,7 +34,7 @@
 }
 
 .course-info-card {
-    background: white;
+    background: transparent;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     padding: clamp(1rem, 3vw, 1.5rem);
     height: 100%;
@@ -38,6 +49,10 @@
 .course-description {
     line-height: 1.6;
     font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.course-details-card .border {
+    border-color: var(--card-border) !important;
 }
 
 .btn {
@@ -104,6 +119,12 @@
 
 .info-value {
     font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.table-responsive table {
+    --bs-table-bg: var(--card-bg) !important;
+    --bs-table-color: var(--text-primary) !important;
+    --bs-table-hover-color: var(--text-primary) !important;
 }
 
 @media (max-width: 768px) {

@@ -53,7 +53,6 @@
 }
 
 .nav-link {
-    color: rgb(158, 158, 158);
     margin: 0.2rem clamp(0.3rem, 2vw, 1rem);
     padding: 0.5rem clamp(0.6rem, 2vw, 1rem);
     border-radius: 6px;
@@ -109,7 +108,7 @@
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
 }
 
-.btn-outline-light {
+.navbar .btn-outline-light {
     border: none;
 }
 

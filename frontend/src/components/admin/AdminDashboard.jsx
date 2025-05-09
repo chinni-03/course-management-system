@@ -6,7 +6,7 @@ import "./AdminDashboard.css";
 
 const AdminDashboard = () => {
   return (
-    <div className="admin-dashboard">
+    <div className="admin-dashboard section-padding">
       <DashboardNavbar />
       <div className="container my-5">
         <h2 className="text-center page-title mb-5">Admin Dashboard</h2>

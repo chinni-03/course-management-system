@@ -117,7 +117,7 @@ const CourseDetails = () => {
   }
 
   return (
-    <div className="course-details-page">
+    <div className="course-details-page d-flex flex-column min-vh-100">
       <DashboardNavbar />
       <div className="container my-5">
         <div className="row justify-content-center">
@@ -184,7 +184,7 @@ const CourseDetails = () => {
                     <i className="bi bi-info-circle-fill me-2"></i>
                     Description
                   </h4>
-                  <div className="p-3 border rounded bg-light">
+                  <div className="p-3 border rounded">
                     <p className="mb-0">{course.courseDescription}</p>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ const CourseDetails = () => {
                   </h4>
                   <div className="table-responsive">
                     <table className="table table-hover">
-                      <thead className="table-light">
+                      <thead className="">
                         <tr>
                           <th style={{ width: "5%", minWidth: "50px" }}>
                             S.No.
