@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaGraduationCap, FaChartLine, FaHeadset } from "react-icons/fa";
 import Navbar from "./navbar/Navbar";
 import "./LandingPage.css";
+import Footer from "./Footer";
 
 const LandingPage = () => {
   return (
@@ -101,7 +102,7 @@ const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      
+      <Footer />
       <div className="hero-animation"></div>
     </>
   );
