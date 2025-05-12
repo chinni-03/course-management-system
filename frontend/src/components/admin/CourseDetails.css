@@ -127,6 +127,15 @@
     --bs-table-hover-color: var(--text-primary) !important;
 }
 
+.modal-content {
+    background: var(--page-bg);
+}
+
+.modal-content .form-select.form-control option {
+    background: var(--page-bg);
+    color: var(--text-primary);
+}
+
 @media (max-width: 768px) {
     .course-details-page {
         padding: 0.5rem;

@@ -17,31 +17,31 @@ import Footer from "../Footer";
 const AboutPage = () => {
   const teamMembers = [
     {
-      name: "Team Member 1",
+      name: "Dilip D",
       role: "Frontend Developer",
       icon: FaCode,
       colorClass: "frontend",
     },
     {
-      name: "Team Member 2",
+      name: "M Grishma",
       role: "Backend Developer",
       icon: FaDatabase,
       colorClass: "backend",
     },
     {
-      name: "Team Member 3",
+      name: "Sanjana B",
       role: "UI/UX Designer",
       icon: FaPalette,
       colorClass: "design",
     },
     {
-      name: "Team Member 4",
+      name: "Harshini Vijendra Kumar",
       role: "Full Stack Developer",
       icon: FaTools,
       colorClass: "fullstack",
     },
     {
-      name: "Team Member 5",
+      name: "Bhavith Mourya R",
       role: "Quality Assurance",
       icon: FaClipboardCheck,
       colorClass: "qa",

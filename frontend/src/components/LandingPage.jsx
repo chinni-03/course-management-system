@@ -40,40 +40,60 @@ const LandingPage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="features-section section-padding d-flex align-items-center justify-content-center">
-        <div className="container">
-          <h2 className="text-center fw-bold mb-responsive h1">
-            Why Choose EduSync?
-          </h2>
-          <div className="responsive-grid">
-            <div className="feature-card responsive-card">
-              <div className="feature-icon">
-                <FaGraduationCap />
-              </div>
-              <h4 className="h3">Interactive Learning</h4>
-              <p className="body">
-                Engage with dynamic content and real-world projects
-              </p>
-            </div>
-            <div className="feature-card responsive-card">
-              <div className="feature-icon">
-                <FaChartLine />
-              </div>
-              <h4 className="h3">Track Progress</h4>
-              <p className="body">
-                Monitor your growth with detailed analytics
-              </p>
-            </div>
-            <div className="feature-card responsive-card">
-              <div className="feature-icon">
-                <FaHeadset />
-              </div>
-              <h4 className="h3">24/7 Support</h4>
-              <p className="body">Get help whenever you need it</p>
-            </div>
+<section className="features-section section-padding d-flex align-items-center justify-content-center">
+  <div className="container text-center">
+    <h2 className="fw-bold mb-responsive h1">
+      Manage Courses Seamlessly
+    </h2>
+    <div className="row justify-content-center">
+      <div className="col-md-6 col-lg-3 mb-4">
+        <div className="feature-card responsive-card mx-auto">
+          <div className="feature-icon">
+            <FaGraduationCap />
           </div>
+          <h4 className="h3">Add Courses</h4>
+          <p className="body">
+            Quickly add new courses with relevant details like title, code, and description.
+          </p>
         </div>
-      </section>
+      </div>
+      <div className="col-md-6 col-lg-3 mb-4">
+        <div className="feature-card responsive-card mx-auto">
+          <div className="feature-icon">
+            <FaChartLine />
+          </div>
+          <h4 className="h3">Edit & Update</h4>
+          <p className="body">
+            Modify existing course information anytime with a simple and intuitive interface.
+          </p>
+        </div>
+      </div>
+      <div className="col-md-6 col-lg-3 mb-4">
+        <div className="feature-card responsive-card mx-auto">
+          <div className="feature-icon">
+            <FaHeadset />
+          </div>
+          <h4 className="h3">View & Organize</h4>
+          <p className="body">
+            Easily browse all available courses and keep them organized for quick access.
+          </p>
+        </div>
+      </div>
+      <div className="col-md-6 col-lg-3 mb-4">
+        <div className="feature-card responsive-card mx-auto">
+          <div className="feature-icon">
+            <FaGraduationCap />
+          </div>
+          <h4 className="h3">Delete with Control</h4>
+          <p className="body">
+            Remove outdated or incorrect courses safely, ensuring your system stays up-to-date.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="cta-section section-padding text-center d-flex align-items-center justify-content-center">
