@@ -17,13 +17,13 @@ import Footer from "../Footer";
 const AboutPage = () => {
   const teamMembers = [
     {
-      name: "Dilip D",
+      name: "M Grishma",
       role: "Frontend Developer",
       icon: FaCode,
       colorClass: "frontend",
     },
     {
-      name: "M Grishma",
+      name: "Dilip D",
       role: "Backend Developer",
       icon: FaDatabase,
       colorClass: "backend",
