@@ -98,7 +98,7 @@ const StudentDashboard = () => {
                     {enrolledCourses.length === 1 ? "Course" : "Courses"}{" "}
                     Enrolled
                   </p>
-                  <p className="text-muted">Click to view details</p>
+                  <p className="">Click to view details</p>
                 </div>
               </div>
             </Link>

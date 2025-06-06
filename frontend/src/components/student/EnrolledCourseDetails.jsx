@@ -140,7 +140,7 @@ const EnrolledCourseDetails = () => {
                     <i className="bi bi-info-circle-fill me-2"></i>
                     Description
                   </h4>
-                  <div className="p-3 border rounded">
+                  <div className="p-3 border rounded d-flex fit-content">
                     <p className="mb-0 fs-6">{course.courseDescription}</p>
                   </div>
                 </div>

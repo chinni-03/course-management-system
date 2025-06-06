@@ -122,7 +122,7 @@ const ViewCourses = () => {
                     <h5 className="card-title text-center mb-3">
                       {course.courseName}
                     </h5>
-                    <p className="card-text">{course.courseDescription}</p>
+                    <p className="card-text justify">{course.courseDescription}</p>
                     <div className="mt-auto">
                       <div className="course-info">
                         <span className="credits">
