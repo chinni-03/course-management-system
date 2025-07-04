@@ -30,7 +30,6 @@
 <li class="my-0"><a href="#prerequisites">Prerequisites</a></li>
 <li class="my-0"><a href="#installation">Installation</a></li>
 <li class="my-0"><a href="#usage">Usage</a></li>
-<li class="my-0"><a href="#testing">Testing</a></li>
 </ul>
 </li>
 </ul>
@@ -85,14 +84,6 @@
 </code></pre>
 <p><strong>Using <a href="https://maven.apache.org/">maven</a>:</strong></p>
 <pre><code class="language-sh">mvn exec:java
-</code></pre>
-<h3>Testing</h3>
-<p>Course-management-system uses the {<strong>test_framework</strong>} test framework. Run the test suite with:</p>
-<p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
-<pre><code class="language-sh">npm test
-</code></pre>
-<p><strong>Using <a href="https://maven.apache.org/">maven</a>:</strong></p>
-<pre><code class="language-sh">mvn test
 </code></pre>
 <hr>
 <div align="left" class=""><a href="#top">⬆ Return</a></div>
