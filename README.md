@@ -1,121 +1,86 @@
-# 📚 Course Management System (EduSync)
+<div id="top" class="">
 
-A full-stack Course Management System built using **Spring Boot** for the backend and **MySQL** for database management. This project helps administrators manage courses and students efficiently, and allows students to view and enroll in courses.
+<div align="center" class="text-center">
+<h1>COURSE-MANAGEMENT-SYSTEM</h1>
+<p><em>Empowering Learning, Enabling Success Seamlessly</em></p>
 
-## 🚀 Features
-
-### 👤 Role-based Access
-- **Admin**: Can add, update, delete courses, and view enrollments.
-- **Student**: Can view available courses, enroll and view their own enrollments.
-
-### 📦 Backend Functionality
-- Add, update, delete courses
-- Enroll/Unenroll students to/from courses
-- Retrieve enrolled courses by student or course
-- Role-based authorization using **JWT**
-
-### 🌐 Optional Frontend
-- Built with **React**
-- Interfaces for admin and student users
-- Dynamic course listing and enrollment management
-
----
-
-## 🛠️ Tech Stack
-
-### Backend
-- **Java 17**
-- **Spring Boot**
-- **Spring Security + JWT**
-- **MySQL**
-- **Maven**
-
-### Frontend (Optional)
-- **React**
-- **Axios**
-- **Bootstrap**
-
----
-
-## ⚙️ Setup Instructions
-
-### 🔧 Backend (Spring Boot)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/chinni-03/course-management-system.git
-   cd course-management-system
-
-2. Configure the MySQL database:
-   ```application.properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/cmsdb
-   spring.datasource.username=root
-   spring.datasource.password=yourpassword
-   spring.jpa.hibernate.ddl-auto=update
-   security.jwt.secret-key=yoursecretkey
-   security.jwt.issuer=yourissuer
-
-3. Run the application:
-   ```bash
-   mvn spring-boot:run
-
----
-
-## 📁 Project Structure
-
-```
-cms-backend/
-├── controller/
-├── entity/
-├── repository/
-├── service/
-├── security/ (JWT config)
-├── CourseManagementApplication.java
-└── resources/
-    └── application.properties
-
-cms-frontend/
-├── components/
-├── pages/
-├── App.jsx
-└── main.jsx
-```
-
----
-
-## 🔐 API Endpoints
-
-### Courses
-- `GET /api/courses`
-- `GET /api/courses/{courseId}`
-- `POST /api/courses`
-- `PUT /api/courses/{courseId}`
-- `DELETE /api/courses/{courseId}`
-
-### Enrollment
-- `POST /api/enrollments/{studentId}/{courseId}`
-- `GET /api/enrollments/student/{studentId}`
-- `GET /api/enrollments/course/{courseId}`
-
-### Auth
-- `POST /api/auth/register`
-- `POST /api/auth/login`
-
----
-
-## 🤝 Contributors
-
-- Harshini — Full-stack Developer
-
----
-
-## 📃 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
-
----
-
-## 🙌 Acknowledgements
-
-- Spring Boot Team
-- React Docs
-- JWT.io
+<img alt="last-commit" src="https://img.shields.io/github/last-commit/chinni-03/course-management-system?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/chinni-03/course-management-system?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/chinni-03/course-management-system?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<p><em>Built with the tools and technologies:</em></p>
+<img alt="JSON" src="https://img.shields.io/badge/JSON-000000.svg?style=flat&amp;logo=JSON&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&amp;logo=Markdown&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="npm" src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&amp;logo=npm&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&amp;logo=JavaScript&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&amp;logo=React&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
+<br>
+<img alt="XML" src="https://img.shields.io/badge/XML-005FAD.svg?style=flat&amp;logo=XML&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF.svg?style=flat&amp;logo=Vite&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="ESLint" src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&amp;logo=ESLint&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Axios" src="https://img.shields.io/badge/Axios-5A29E4.svg?style=flat&amp;logo=Axios&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3.svg?style=flat&amp;logo=Bootstrap&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+</div>
+<br>
+<hr>
+<h2>Overview</h2>
+<p>Course Management System is a full-featured platform designed to simplify the development of educational management solutions. It provides a robust backend with core API endpoints for managing courses, enrollments, and user authentication, all secured with JWT-based role-based access control. The system includes a modern React frontend built with Vite, supporting rapid development and a seamless user experience. Key features include automated admin seeding, clear separation of concerns across controllers, services, and repositories, and comprehensive data models for courses, users, and enrollments. Whether you're building a learning platform or an administrative dashboard, this project offers a scalable, maintainable foundation to accelerate your development process.
+<strong>Why course-management-system?</strong></p>
+<p>This project streamlines backend and frontend development for educational platforms. The core features include:</p>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0">🧩 <strong>🔑 Role-Based Access:</strong> Secure, role-specific permissions for admins and students.</li>
+<li class="my-0">🎯 <strong>🔒 JWT Authentication:</strong> Robust security for user sessions and data protection.</li>
+<li class="my-0">⚙️ <strong>API Endpoints:</strong> Well-structured REST APIs for managing courses, users, and enrollments.</li>
+<li class="my-0">🚀 <strong>Modern Frontend:</strong> React + Vite setup for fast, scalable UI development.</li>
+<li class="my-0">🛠️ <strong>Automated Seeding:</strong> Easy initial setup with default admin account.</li>
+<li class="my-0">📚 <strong>Comprehensive Data Models:</strong> Clear entity relationships for seamless data management.</li>
+</ul>
+<hr>
+<h2>Getting Started</h2>
+<h3>Prerequisites</h3>
+<p>This project requires the following dependencies:</p>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0"><strong>Programming Language:</strong> Java</li>
+<li class="my-0"><strong>Package Manager:</strong> Npm, Maven</li>
+</ul>
+<h3>Installation</h3>
+<p>Build course-management-system from the source and install dependencies:</p>
+<ol>
+<li class="my-0">
+<p><strong>Clone the repository:</strong></p>
+<pre><code class="language-sh">❯ git clone https://github.com/chinni-03/course-management-system
+</code></pre>
+</li>
+<li class="my-0">
+<p><strong>Navigate to the project directory:</strong></p>
+<pre><code class="language-sh">❯ cd course-management-system
+</code></pre>
+</li>
+<li class="my-0">
+<p><strong>Install the dependencies:</strong></p>
+</li>
+</ol>
+<p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
+<pre><code class="language-sh">❯ npm install
+</code></pre>
+<p><strong>Using <a href="https://maven.apache.org/">maven</a>:</strong></p>
+<pre><code class="language-sh">❯ mvn install
+</code></pre>
+<h3>Usage</h3>
+<p>Run the project with:</p>
+<p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
+<pre><code class="language-sh">npm start
+</code></pre>
+<p><strong>Using <a href="https://maven.apache.org/">maven</a>:</strong></p>
+<pre><code class="language-sh">mvn exec:java
+</code></pre>
+<h3>Testing</h3>
+<p>Course-management-system uses the {<strong>test_framework</strong>} test framework. Run the test suite with:</p>
+<p><strong>Using <a href="https://www.npmjs.com/">npm</a>:</strong></p>
+<pre><code class="language-sh">npm test
+</code></pre>
+<p><strong>Using <a href="https://maven.apache.org/">maven</a>:</strong></p>
+<pre><code class="language-sh">mvn test
+</code></pre>
+<hr>
+<div align="left" class=""><a href="#top">⬆ Return</a></div>
+<hr></div>
