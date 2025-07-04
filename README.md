@@ -22,6 +22,19 @@
 </div>
 <br>
 <hr>
+<h2>Table of Contents</h2>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0"><a href="#overview">Overview</a></li>
+<li class="my-0"><a href="#getting-started">Getting Started</a>
+<ul class="list-disc pl-4 my-0">
+<li class="my-0"><a href="#prerequisites">Prerequisites</a></li>
+<li class="my-0"><a href="#installation">Installation</a></li>
+<li class="my-0"><a href="#usage">Usage</a></li>
+<li class="my-0"><a href="#testing">Testing</a></li>
+</ul>
+</li>
+</ul>
+<hr>
 <h2>Overview</h2>
 <p>Course Management System is a full-featured platform designed to simplify the development of educational management solutions. It provides a robust backend with core API endpoints for managing courses, enrollments, and user authentication, all secured with JWT-based role-based access control. The system includes a modern React frontend built with Vite, supporting rapid development and a seamless user experience. Key features include automated admin seeding, clear separation of concerns across controllers, services, and repositories, and comprehensive data models for courses, users, and enrollments. Whether you're building a learning platform or an administrative dashboard, this project offers a scalable, maintainable foundation to accelerate your development process.
 <strong>Why course-management-system?</strong></p>
